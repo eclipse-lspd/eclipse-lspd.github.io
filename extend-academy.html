@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Авторизация через Discord</title>
+  <meta charset="UTF-8">
+  <script>
+    const clientId = '1396827661514313939';
+    const redirectUri = 'https://script.google.com/macros/d/AKfycbzXkpBKosJXKviGcgYw6KDdjT2WWG9ktXjnEFiCC5ddq1Nxpcby5G0mZaWg7M725WZn/exec';
+    const scope = 'identify';
+    const url = `https://discord.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=${scope}`;
+    window.location.href = url;
+  </script>
+</head>
+<body>
+  <p>Переадресация...</p>
+</body>
+</html>
